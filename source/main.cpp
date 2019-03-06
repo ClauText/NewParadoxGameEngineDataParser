@@ -10,7 +10,7 @@ int main(void)
 {
 	wiz::load_data::UserType global;
 
-	wiz::load_data::LoadData::LoadDataFromFile("input.eu4", global, 0, 0); // DONE - support 0, 0
+	wiz::load_data::LoadData::LoadDataFromFile("input.eu4", global); // use all of thread in cpu?
 
 	wiz::load_data::LoadData::SaveWizDB(global, "ouput.eu4");
 
