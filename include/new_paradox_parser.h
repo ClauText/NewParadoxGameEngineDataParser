@@ -5203,7 +5203,7 @@ namespace wiz {
 						std::vector<int> pivot;
 
 						for (int i = 0; i < pivot_num; ++i) {
-							pivot.push_back(FindRight(strVec, (last_idx / (pivot_num + 1)) * (i), (last_idx / (pivot_num + 1)) * (i + 1) - 1, option));
+							pivot.push_back(FindRight2(strVec, (last_idx / (pivot_num + 1)) * (i), (last_idx / (pivot_num + 1)) * (i + 1) - 1, option));
 						}
 
 						for (int i = 0; i < pivot.size(); ++i) {
